@@ -1,8 +1,8 @@
 declare
-    v_string varchar2(100);
+    v_doctor LEBEDEV_MA.DOCTORS%rowtype;
     begin
-    select mo.NAME into v_string from LEBEDEV_MA.MED_ORGANISATIONS mo where ROWNUM = 1;
-    DBMS_OUTPUT.PUT_LINE(v_string);
+    select * into v_doctor from LEBEDEV_MA.DOCTORS d where d.SALARY = 30000;
+    DBMS_OUTPUT.PUT_LINE(v_doctor.SURNAME || ' ' || v_doctor.NAME);
 end;
 
 --Заведите заранее переменную типа строки. создайте выборку забирающуюю ровну одну строку. выведите в консоль результат

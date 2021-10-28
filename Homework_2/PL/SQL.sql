@@ -3,7 +3,7 @@ declare
     v_number number;
 begin
     DBMS_OUTPUT.ENABLE();
-    select c.ID_REGION, c.ID_REGION into v_string, v_number from LEBEDEV_MA.CITIES c where c.NAME = 'Кемерово';
+    select c.ID_REGION, c.NAME into v_number, v_string from LEBEDEV_MA.CITIES c where c.NAME = 'Кемерово';
     dbms_output.put_line(v_string);
     dbms_output.put_line(v_number);
 end;

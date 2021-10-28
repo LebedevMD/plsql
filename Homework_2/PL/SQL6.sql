@@ -1,6 +1,7 @@
 declare
     v_date_1 date;
     v_date_2 date;
+    v_date_3 date;
     v_count number;
     begin
     v_date_1 := sysdate;
@@ -9,9 +10,10 @@ declare
     DBMS_OUTPUT.PUT_LINE('Талонов на '|| v_date_1 || ': ' ||v_count);
     select count(*) into v_count from LEBEDEV_MA.TALON t where trunc(t.STARTDATE) = trunc(v_date_2);
     DBMS_OUTPUT.PUT_LINE('Талонов на '|| v_date_2 || ': ' ||v_count);
-    select count(*) into v_count from LEBEDEV_MA.TALON t where trunc(t.STARTDATE) = trunc(to_date('20.10.2021', 'dd.mm.yyyy'));
-    DBMS_OUTPUT.PUT_LINE('Талонов на '|| to_date('20.10.2021', 'dd.mm.yyyy') || ': ' ||v_count);
-    v_date_2 := to_date('20.10.2021', 'dd.mm.yyyy') - 7;
+    v_date_3 := to_date('20.10.2021', 'dd.mm.yyyy');
+    select count(*) into v_count from LEBEDEV_MA.TALON t where trunc(t.STARTDATE) = trunc(v_date_3);
+    DBMS_OUTPUT.PUT_LINE('Талонов на '|| v_date_3 || ': ' ||v_count);
+    v_date_2 := v_date_3 - 7;
     select count(*) into v_count from LEBEDEV_MA.TALON t where trunc(t.STARTDATE) = trunc(v_date_2);
     DBMS_OUTPUT.PUT_LINE('Талонов на '|| v_date_2 || ': ' ||v_count);
 end;
