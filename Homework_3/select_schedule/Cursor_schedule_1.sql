@@ -1,7 +1,16 @@
 --Выдать расписание больниц
 declare
-    cursor cursor_1 is (select mo.Name as Назв_МедОрг, h.ID_Hospital as Айди_больницы, sch.DayOfWeek as День_недели, sch.START_WORK as Начало_работы, sch.END_WORK as Конец_работы
-        from LEBEDEV_MA.SCHEDULE sch join LEBEDEV_MA.HOSPITALS h on sch.ID_HOSPITAL = h.ID_HOSPITAL join LEBEDEV_MA.MED_ORGANISATIONS mo on h.ID_MEDORGAN = mo.ID_MED_ORGANISATION);
+    cursor cursor_1 is
+        select
+               mo.Name as Назв_МедОрг,
+               h.ID_Hospital as Айди_больницы,
+               sch.DayOfWeek as День_недели,
+               sch.START_WORK as Начало_работы,
+               sch.END_WORK as Конец_работы
+        from
+             LEBEDEV_MA.SCHEDULE sch
+             join LEBEDEV_MA.HOSPITALS h on sch.ID_HOSPITAL = h.ID_HOSPITAL
+             join LEBEDEV_MA.MED_ORGANISATIONS mo on h.ID_MEDORGAN = mo.ID_MED_ORGANISATION;
     type record_1 is record (mo_Name varchar2(999), h_ID_Hospital number, DayOfWeek varchar2(11), START_WORK date, END_WORK date);
     v_record_schedule record_1;
 begin

@@ -35,6 +35,7 @@ insert into LEBEDEV_MA.TYPE (NAME) values ('Частная');
 --hospitals
 select mo.ID_MED_ORGANISATION into v_id from LEBEDEV_MA.MED_ORGANISATIONS mo where mo.NAME = 'Кемеровская областная клиническая больница';
 insert into LEBEDEV_MA.HOSPITALS (ID_MEDORGAN, ISAVAILABLE, ID_TYPE) VALUES (v_id, 0, (select ID_TYPE from LEBEDEV_MA.TYPE where NAME = 'Государственная'));
+update LEBEDEV_MA.HOSPITALS h set h.ADDRESS = 'Октябрьский проспект, 22' where ROWNUM = 1;
 
 --genders
 insert into LEBEDEV_MA.GENDER (NAME) values ('Мужской');
@@ -47,7 +48,7 @@ insert into LEBEDEV_MA.QUALIFICATION (QUALIFICATION) values ('Первая');
 insert into LEBEDEV_MA.QUALIFICATION (QUALIFICATION) values ('Вторая');
 
 --age_required
-insert into LEBEDEV_MA.REQUIRED_AGE (START_INTERVAL) VALUES (18);
+insert into LEBEDEV_MA.REQUIRED_AGE (START_INTERVAL, END_INTERVAL) VALUES (18, 100);
 
 --speciality
 select ra.ID_REQUIRED_AGE into v_id from LEBEDEV_MA.REQUIRED_AGE ra where ra.START_INTERVAL = 18;
@@ -170,4 +171,12 @@ insert into LEBEDEV_MA.JOURNAL (ID_PATIENT, ID_TALON, ID_STATUS) VALUES
     ((select p.ID_Patient from LEBEDEV_MA.PATIENTS p where p.SURNAME = 'Логвенков'), 6, v_id);
 insert into LEBEDEV_MA.JOURNAL (ID_PATIENT, ID_TALON, ID_STATUS) VALUES
     ((select p.ID_Patient from LEBEDEV_MA.PATIENTS p where p.SURNAME = 'Логвенков'), 8, v_id);
+
+--required_gender
+select sp.ID_SPECIALITY into v_id from LEBEDEV_MA.SPECIALITY sp where sp.NAME = 'Хирург';
+insert into LEBEDEV_MA.REQUIRED_GENDER (ID_SPECIALITY, ID_GENDER) VALUES
+    (v_id, (select g.ID_Gender from LEBEDEV_MA.GENDER g where g.NAME = 'Мужской'));
+select sp.ID_SPECIALITY into v_id from LEBEDEV_MA.SPECIALITY sp where sp.NAME = 'Терапевт';
+insert into LEBEDEV_MA.REQUIRED_GENDER (ID_SPECIALITY, ID_GENDER) VALUES
+    (v_id, (select g.ID_Gender from LEBEDEV_MA.GENDER g where g.NAME = 'Женский'));
 end;
