@@ -1,15 +1,12 @@
 --Выдать все специальности (неудаленные), в которых есть хотя бы один доктор (неудаленный), которые работают в больницах (неудаленных)
 
 --Процедура
-create or replace procedure LEBEDEV_MA.show_all_speciality
-    as
-        v_cursor_spec sys_refcursor;
-        type t_record_spec is
-            record (
-                SpecName varchar2(100));
-        v_spec t_record_spec;
-    begin
-    open v_cursor_spec for
+create or replace procedure LEBEDEV_MA.show_all_speciality(
+    out_cursor out sys_refcursor
+)
+as
+begin
+    open out_cursor for
         select
                sp.NAME as Специальность
         from
@@ -22,6 +19,17 @@ create or replace procedure LEBEDEV_MA.show_all_speciality
               h.DELETED is null
         group by
                  sp.NAME;
+end;
+
+--Основная часть
+declare
+    v_cursor_spec sys_refcursor;
+    type t_record_spec is
+        record (
+            SpecName varchar2(100));
+    v_spec t_record_spec;
+begin
+    LEBEDEV_MA.show_all_speciality(out_cursor => v_cursor_spec);
     fetch v_cursor_spec into v_spec;
     if v_cursor_spec%found then
         loop
@@ -33,9 +41,4 @@ create or replace procedure LEBEDEV_MA.show_all_speciality
         DBMS_OUTPUT.PUT_LINE('Специальности не найдены');
     end if;
     close v_cursor_spec;
-    end;
-
---Основная часть
-begin
-    LEBEDEV_MA.show_all_speciality();
 end;

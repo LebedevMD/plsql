@@ -1,19 +1,12 @@
 --Выдать расписание больниц
 
 --Процедура
-create or replace procedure LEBEDEV_MA.show_schedule
+create or replace procedure LEBEDEV_MA.show_schedule(
+    out_cursor out sys_refcursor
+)
 as
-    v_cursor_schedule sys_refcursor;
-    type t_record_schedule is
-        record (
-            mo_Name varchar2(999),
-            h_ID_Hospital number,
-            DayOfWeek varchar2(11),
-            START_WORK date,
-            END_WORK date);
-    v_schedule t_record_schedule;
 begin
-    open v_cursor_schedule for
+    open out_cursor for
         select
                mo.Name as Назв_МедОрг,
                h.ID_Hospital as Айди_больницы,
@@ -24,6 +17,21 @@ begin
              LEBEDEV_MA.SCHEDULE sch
              join LEBEDEV_MA.HOSPITALS h on sch.ID_HOSPITAL = h.ID_HOSPITAL
              join LEBEDEV_MA.MED_ORGANISATIONS mo on h.ID_MEDORGAN = mo.ID_MED_ORGANISATION;
+end;
+
+--Основная часть
+declare
+    v_cursor_schedule sys_refcursor;
+    type t_record_schedule is
+        record (
+            mo_Name varchar2(999),
+            h_ID_Hospital number,
+            DayOfWeek varchar2(11),
+            START_WORK date,
+            END_WORK date);
+    v_schedule t_record_schedule;
+begin
+    LEBEDEV_MA.show_schedule(out_cursor => v_cursor_schedule);
     fetch v_cursor_schedule into v_schedule;
     if (v_cursor_schedule%found) then
         loop
@@ -36,9 +44,4 @@ begin
         DBMS_OUTPUT.PUT_LINE('Расписания не найдено');
     end if;
     close v_cursor_schedule;
-end;
-
---Основная часть
-begin
-    LEBEDEV_MA.show_schedule();
 end;
