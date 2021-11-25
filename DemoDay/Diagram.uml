@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>DATABASE</ID>
+  <OriginalElement>28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.ACCOUNT</OriginalElement>
+  <nodes>
+    <node x="299.60614651757027" y="1129.2743298320886">28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.JOURNAL</node>
+    <node x="70.56963802403857" y="1173.2743298320886">28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.STATUS</node>
+    <node x="533.5543719892685" y="467.49999999999994">28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.DOCTORS</node>
+    <node x="-33.26906566497277" y="1001.8447975995226">28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.DOCUMENT</node>
+    <node x="966.7002674790963" y="608.3606033536992">28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.QUALIFICATION</node>
+    <node x="772.1225008507743" y="170.44309479799315">28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.TYPE</node>
+    <node x="685.1798878561698" y="1013.298737463492">28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.TALON</node>
+    <node x="269.69867935799834" y="431.0">28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.SPECIALITY</node>
+    <node x="-33.26906566497277" y="723.8782677581196">28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.DOCUMENTS_NUMBERS</node>
+    <node x="807.9618649880726" y="828.8277182235836">28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.DOCTORS_EDUCATIONS</node>
+    <node x="23.861111111111086" y="248.82771822358347">28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.REQUIRED_GENDER</node>
+    <node x="1248.0620668873846" y="170.44309479799315">28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.CITIES</node>
+    <node x="578.9408896207563" y="833.5179673993579">28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.REVIEWS</node>
+    <node x="993.7002674790963" y="170.44309479799315">28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.REGIONS</node>
+    <node x="1171.0620668873846" y="324.0122511485452">28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.MED_ORGANISATIONS</node>
+    <node x="993.7002674790963" y="447.348560866121">28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.SCHEDULE</node>
+    <node x="741.195999419254" y="308.0">28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.HOSPITALS</node>
+    <node x="269.69867935799834" y="248.82771822358347">28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.REQUIRED_AGE</node>
+    <node x="383.4994148554878" y="978.5179673993579">28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.ACCOUNT</node>
+    <node x="1117.2956377291462" y="757.2697335381991">28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.EDUCATION</node>
+    <node x="240.41991425343986" y="723.8782677581196">28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.PATIENTS</node>
+    <node x="159.98171284565723" y="591.4490811638592">28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.GENDER</node>
+    <node x="509.3257850241546" y="248.82771822358336">28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.HOSPITAL_SPECIALITY</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.DOCTORS" target="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.GENDER" relationship="REFERENCES">
+      <point x="74.625" y="-149.5" />
+      <point x="707.6793719892685" y="605.0866120940059" />
+      <point x="237.98171284565723" y="605.0866120940059" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.HOSPITALS" target="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.TYPE" relationship="REFERENCES">
+      <point x="-44.5" y="-83.5" />
+      <point x="785.695999419254" y="406.0" />
+      <point x="840.1225008507743" y="406.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.DOCTORS_EDUCATIONS" target="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.EDUCATION" relationship="REFERENCES">
+      <point x="-61.25" y="-50.5" />
+      <point x="869.2118649880726" y="884.7486405504384" />
+      <point x="1205.7956377291462" y="884.7486405504384" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.SPECIALITY" target="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.REQUIRED_AGE" relationship="REFERENCES">
+      <point x="0.0" y="-61.5" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.MED_ORGANISATIONS" target="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.CITIES" relationship="REFERENCES">
+      <point x="0.0" y="-50.5" />
+      <point x="1286.5620668873846" y="271.4430947979931" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.HOSPITAL_SPECIALITY" target="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.SPECIALITY" relationship="REFERENCES">
+      <point x="-49.841864656620146" y="-32.3939509954057" />
+      <point x="556.9839203675344" y="448.3617917304747" />
+      <point x="367.69867935799834" y="448.3617917304747" />
+      <point x="0.0" y="61.5" />
+    </edge>
+    <edge source="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.CITIES" target="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.REGIONS" relationship="REFERENCES">
+      <point x="0.0" y="-50.5" />
+      <point x="1325.0620668873846" y="175.2307180113195" />
+      <point x="1070.7002674790963" y="175.2307180113195" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.DOCUMENTS_NUMBERS" target="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.DOCUMENT" relationship="REFERENCES">
+      <point x="-58.0" y="-61.5" />
+      <point x="24.73093433502723" y="1041.3447975995227" />
+      <point x="54.73093433502723" y="1041.3447975995227" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.DOCTORS" target="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.HOSPITALS" relationship="REFERENCES">
+      <point x="-74.625" y="-149.5" />
+      <point x="558.4293719892685" y="572.6692111038367" />
+      <point x="830.195999419254" y="572.6692111038367" />
+      <point x="0.0" y="83.5" />
+    </edge>
+    <edge source="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.DOCTORS" target="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.QUALIFICATION" relationship="REFERENCES">
+      <point x="-24.875" y="-149.5" />
+      <point x="608.1793719892685" y="619.0" />
+      <point x="1066.2002674790963" y="619.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.HOSPITALS" target="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.MED_ORGANISATIONS" relationship="REFERENCES">
+      <point x="44.5" y="-83.5" />
+      <point x="874.695999419254" y="406.0" />
+      <point x="1286.5620668873846" y="406.0" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.JOURNAL" target="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.STATUS" relationship="REFERENCES">
+      <point x="53.56163511057332" y="-46.56573405356335" />
+      <point x="163.06963802403857" y="1144.2085957785253" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.JOURNAL" target="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.TALON" relationship="REFERENCES">
+      <point x="60.81615761793557" y="5.021981554346212" />
+      <point x="441.92230413550584" y="1219.666806899453" />
+      <point x="764.1798878561698" y="1219.666806899453" />
+      <point x="0.0" y="72.5" />
+    </edge>
+    <edge source="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.REQUIRED_GENDER" target="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.GENDER" relationship="REFERENCES">
+      <point x="-87.96641327396352" y="45.289866967834314" />
+      <point x="45.89469783714757" y="619.0" />
+      <point x="237.98171284565723" y="619.0" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.PATIENTS" target="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.GENDER" relationship="REFERENCES">
+      <point x="48.0" y="-116.5" />
+      <point x="384.41991425343986" y="741.7341186369372" />
+      <point x="346.78292458053136" y="741.7341186369372" />
+      <point x="346.78292458053136" y="638.9391338790598" />
+      <point x="237.98171284565723" y="638.9391338790598" />
+      <point x="0.0" y="39.5" />
+    </edge>
+    <edge source="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.PATIENTS" target="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.ACCOUNT" relationship="REFERENCES">
+      <point x="-48.0" y="-116.5" />
+      <point x="288.41991425343986" y="840.3782677581196" />
+      <point x="467.4994148554878" y="840.3782677581196" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.DOCUMENTS_NUMBERS" target="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.PATIENTS" relationship="REFERENCES">
+      <point x="58.0" y="-61.5" />
+      <point x="140.73093433502723" y="908.0685828431918" />
+      <point x="-11.702901713210963" y="67.69031508507226" />
+    </edge>
+    <edge source="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.HOSPITAL_SPECIALITY" target="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.HOSPITALS" relationship="REFERENCES">
+      <point x="55.60415372010277" y="-33.31087289433373" />
+      <point x="662.4299387442574" y="424.4402756508423" />
+      <point x="830.195999419254" y="424.4402756508423" />
+      <point x="0.0" y="83.5" />
+    </edge>
+    <edge source="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.REVIEWS" target="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.DOCTORS" relationship="REFERENCES">
+      <point x="-41.25" y="-72.5" />
+      <point x="620.1908896207563" y="849.972843663828" />
+      <point x="682.8043719892685" y="849.972843663828" />
+      <point x="49.75" y="149.5" />
+    </edge>
+    <edge source="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.DOCTORS_EDUCATIONS" target="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.DOCTORS" relationship="REFERENCES">
+      <point x="61.25" y="-50.5" />
+      <point x="991.7118649880726" y="713.3857742652507" />
+      <point x="86.51596236560931" y="96.38577426525069" />
+    </edge>
+    <edge source="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.DOCTORS" target="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.SPECIALITY" relationship="REFERENCES">
+      <point x="24.875" y="-149.5" />
+      <point x="657.9293719892685" y="584.9877488514549" />
+      <point x="376.3785009503155" y="584.9877488514549" />
+      <point x="8.679821592317182" y="62.2143458140514" />
+    </edge>
+    <edge source="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.REVIEWS" target="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.ACCOUNT" relationship="REFERENCES">
+      <point x="-57.21384990653041" y="-68.91325018523094" />
+      <point x="604.2270397142258" y="1007.3782677581196" />
+      <point x="467.4994148554878" y="1007.3782677581196" />
+      <point x="0.0" y="50.5" />
+    </edge>
+    <edge source="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.TALON" target="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.DOCTORS" relationship="REFERENCES">
+      <point x="0.9362602798886428" y="-78.93235070132846" />
+      <point x="765.1161481360584" y="933.5198814522105" />
+      <point x="764.1798878561698" y="933.5198814522105" />
+      <point x="764.1798878561698" y="743.7203013089652" />
+      <point x="727.2598873309213" y="743.7203013089652" />
+      <point x="94.20551534165281" y="123.59496171894295" />
+    </edge>
+    <edge source="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.JOURNAL" target="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.PATIENTS" relationship="REFERENCES">
+      <point x="-41.05204279136376" y="-47.65299852977296" />
+      <point x="336.41991425343986" y="1143.1213313023156" />
+      <point x="0.0" y="116.5" />
+    </edge>
+    <edge source="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.REQUIRED_GENDER" target="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.SPECIALITY" relationship="REFERENCES">
+      <point x="-25.899942933197835" y="-43.3765192332595" />
+      <point x="107.96116817791325" y="513.2485818342063" />
+      <point x="350.584643146361" y="513.2485818342063" />
+      <point x="-17.11403621163737" y="61.40828775767784" />
+    </edge>
+    <edge source="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.SCHEDULE" target="28859c07-0f67-4e6f-b1a6-34398e4a0464.TABLE:LEBEDEV_MA.HOSPITALS" relationship="REFERENCES">
+      <point x="0.0" y="-72.5" />
+      <point x="1079.7002674790963" y="519.848560866121" />
+      <point x="865.3300065560179" y="519.848560866121" />
+      <point x="35.1340071367639" y="78.3577466461727" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.6406054279749474" showDependencies="false" x="622.2942134683723" y="606.2607137037644" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Columns</Category>
+    <Category>Comments</Category>
+    <Category>Key columns</Category>
+    <Category>Virtual foreign keys</Category>
+  </Categories>
+</Diagram>
+

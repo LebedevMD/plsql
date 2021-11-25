@@ -12,7 +12,7 @@ declare
     v_pat_surname varchar2(100);
 begin
     v_pat_surname := 'Логвенков';
-    v_cursor_journal := LEBEDEV_MA.PKG_TALON.GET_CURSOR_JOURNAL_BY_PATIENT_SURNAME(p_pat_surname => v_pat_surname);
+    v_cursor_journal := LEBEDEV_MA.PKG_JOURNAL.GET_CURSOR_JOURNAL_BY_PATIENT_SURNAME(p_pat_surname => v_pat_surname);
     fetch v_cursor_journal into v_journal;
     if (v_cursor_journal%found) then
         loop

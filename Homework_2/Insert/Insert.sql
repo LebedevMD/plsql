@@ -80,12 +80,19 @@ insert into LEBEDEV_MA.TALON (ID_DOCTOR, ISOPEN, STARTDATE, ENDDATE) VALUES (v_i
 insert into LEBEDEV_MA.TALON (ID_DOCTOR, ISOPEN, STARTDATE, ENDDATE) VALUES (v_id, 1, to_date('14.10.2021 16:00', 'dd.mm.yyyy hh24:mi'), to_date('14.10.2021 16:30', 'dd.mm.yyyy hh24:mi'));
 insert into LEBEDEV_MA.TALON (ID_DOCTOR, ISOPEN, STARTDATE, ENDDATE) VALUES (v_id, 1, to_date('20.10.2021 12:00', 'dd.mm.yyyy hh24:mi'), to_date('20.10.2021 12:30', 'dd.mm.yyyy hh24:mi'));
 select d.ID_DOCTOR into v_id from LEBEDEV_MA.DOCTORS d where d.SURNAME = 'Лебедев';
+insert into LEBEDEV_MA.TALON (ID_DOCTOR, ISOPEN, STARTDATE, ENDDATE) VALUES (v_id, 1, to_date('30.12.2021 12:00', 'dd.mm.yyyy hh24:mi'), to_date('30.12.2021 12:30', 'dd.mm.yyyy hh24:mi'));
+insert into LEBEDEV_MA.TALON (ID_DOCTOR, ISOPEN, STARTDATE, ENDDATE) VALUES (v_id, 1, to_date('30.12.2021 12:30', 'dd.mm.yyyy hh24:mi'), to_date('30.12.2021 13:00', 'dd.mm.yyyy hh24:mi'));
+insert into LEBEDEV_MA.TALON (ID_DOCTOR, ISOPEN, STARTDATE, ENDDATE) VALUES (v_id, 1, to_date('30.12.2021 13:00', 'dd.mm.yyyy hh24:mi'), to_date('30.12.2021 13:30', 'dd.mm.yyyy hh24:mi'));
 insert into LEBEDEV_MA.TALON (ID_DOCTOR, ISOPEN, STARTDATE, ENDDATE) VALUES (v_id, 1, to_date('01.11.2021 12:00', 'dd.mm.yyyy hh24:mi'), to_date('01.11.2021 12:30', 'dd.mm.yyyy hh24:mi'));
 insert into LEBEDEV_MA.TALON (ID_DOCTOR, ISOPEN, STARTDATE, ENDDATE) VALUES (v_id, 1, to_date('01.11.2021 12:30', 'dd.mm.yyyy hh24:mi'), to_date('01.11.2021 13:00', 'dd.mm.yyyy hh24:mi'));
 insert into LEBEDEV_MA.TALON (ID_DOCTOR, ISOPEN, STARTDATE, ENDDATE) VALUES (v_id, 1, to_date('02.11.2021 12:00', 'dd.mm.yyyy hh24:mi'), to_date('02.11.2021 12:30', 'dd.mm.yyyy hh24:mi'));
 insert into LEBEDEV_MA.TALON (ID_DOCTOR, ISOPEN, STARTDATE, ENDDATE) VALUES (v_id, 1, to_date('02.11.2021 12:30', 'dd.mm.yyyy hh24:mi'), to_date('02.11.2021 13:00', 'dd.mm.yyyy hh24:mi'));
 insert into LEBEDEV_MA.TALON (ID_DOCTOR, ISOPEN, STARTDATE, ENDDATE) VALUES (v_id, 1, to_date('26.10.2021 12:00', 'dd.mm.yyyy hh24:mi'), to_date('26.10.2021 12:30', 'dd.mm.yyyy hh24:mi'));
 insert into LEBEDEV_MA.TALON (ID_DOCTOR, ISOPEN, STARTDATE, ENDDATE) VALUES (v_id, 1, to_date('25.10.2021 12:00', 'dd.mm.yyyy hh24:mi'), to_date('25.10.2021 12:30', 'dd.mm.yyyy hh24:mi'));
+insert into LEBEDEV_MA.TALON (ID_DOCTOR, ISOPEN, STARTDATE, ENDDATE) VALUES (v_id, 1, to_date('15.11.2021 12:00', 'dd.mm.yyyy hh24:mi'), to_date('15.11.2021 12:30', 'dd.mm.yyyy hh24:mi'));
+insert into LEBEDEV_MA.TALON (ID_DOCTOR, ISOPEN, STARTDATE, ENDDATE) VALUES (v_id, 1, to_date('15.11.2021 12:30', 'dd.mm.yyyy hh24:mi'), to_date('15.11.2021 13:00', 'dd.mm.yyyy hh24:mi'));
+insert into LEBEDEV_MA.TALON (ID_DOCTOR, ISOPEN, STARTDATE, ENDDATE) VALUES (v_id, 1, to_date('17.11.2021 12:00', 'dd.mm.yyyy hh24:mi'), to_date('17.11.2021 12:30', 'dd.mm.yyyy hh24:mi'));
+insert into LEBEDEV_MA.TALON (ID_DOCTOR, ISOPEN, STARTDATE, ENDDATE) VALUES (v_id, 1, to_date('17.11.2021 12:30', 'dd.mm.yyyy hh24:mi'), to_date('17.11.2021 13:00', 'dd.mm.yyyy hh24:mi'));
 
 --schedule
 select h.ID_HOSPITAL into v_id from LEBEDEV_MA.HOSPITALS h where h.ID_MEDORGAN =

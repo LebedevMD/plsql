@@ -71,7 +71,7 @@ as
                      h.ID_TYPE,
                      tp.Name
             order by
-                     case when h.ID_TYPE = LEBEDEV_MA.PKG_CONSTANTS.C_HOSPITAL_PRIVATE_CONSTANT then 1 else 0 end,
+                     case when h.ID_TYPE = LEBEDEV_MA.PKG_HOSPITALS.C_HOSPITAL_PRIVATE then 1 else 0 end,
                      Колво_врачей;
         return v_cursor;
     end;

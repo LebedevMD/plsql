@@ -38,5 +38,5 @@ as
         where
               (t.STARTDATE >= sysdate and
                 ((p_id_doc is not null and d.ID_DOCTOR = p_id_doc)
-                or (p_id_doc is null and d.ID_DOCTOR is not null)));
+                or (p_id_doc is null)));
 end;
